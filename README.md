@@ -16,6 +16,8 @@ e.g. iteration over 3 dimensional combination of value set {a,b} results in:
 ```
 
 ```
+  #define COMBINTATORIC_IMPL
+  #include "combinatori.h"
   combinatoric_combination_iterator_t iter = combinatoric_combination_iterator(VALS, DIMS, buffer);
   size_t next[DIMS];
   while(combinatoric_combination_iterator_next(&iter, next))
